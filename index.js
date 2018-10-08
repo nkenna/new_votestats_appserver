@@ -23,7 +23,7 @@ const jwt = require('jsonwebtoken');
 var moment = require('moment')
 var nodemailer = require('nodemailer');
 
-mongoose.connect('mongodb://localhost:27017/votestatsdb');
+mongoose.connect('mongodb://nkenna:nkenna007@ds125673.mlab.com:25673/heroku_j02lqbhk');
 
 //var x = app
 
@@ -76,7 +76,7 @@ setInterval(() =>{
       console.log(err);
       return;
     }else{
-      election.status = 'started';
+     // election.status = 'started';
       election.save((err, ele) =>{
         if(err){
           console.log(err)
@@ -97,7 +97,7 @@ setInterval(() =>{
       console.log(err);
       return;
     }else{
-      election.status = 'end';
+     // election.status = 'end';
       election.save((err, ele) =>{
         if(err){
           console.log(err)
