@@ -7,7 +7,6 @@ const user = require('./routes/user.route');
 var cors = require('cors');
 var async = require('async');
 
-
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cors())
