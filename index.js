@@ -686,8 +686,9 @@ app.get('/delete', function(req, res){
  app.use('/user', user);
 
 
-const PORT = 3000;
+
+const port = process.env.PORT || 8000;
 
 app.listen(PORT, function(){
-   console.log('Server is running on Port',PORT);
+   console.log('Server is running on Port', port);
 });
