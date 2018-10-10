@@ -687,7 +687,7 @@ app.get('/delete', function(req, res){
 
 
 
-const port = process.env.PORT || 8000;
+const port = process.env.PORT;
 
 app.listen(PORT, function(){
    console.log('Server is running on Port', port);
