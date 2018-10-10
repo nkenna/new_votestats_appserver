@@ -26,7 +26,7 @@ var nodemailer = require('nodemailer');
 //mongoose.connect('mongodb://nkenna:nkenna007@ds125673.mlab.com:25673/heroku_j02lqbhk');
 
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://nkenna:nkenna007@ds125673.mlab.com:25673/heroku_j02lqbhk')
+mongoose.connect('mongodb://heroku_0v20v9h9@ds125673.mlab.com:25673/heroku_j02lqbhk')
 .then(() =>  console.log('connection succesful'))
 .catch((err) => console.error(err));
 
