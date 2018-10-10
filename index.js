@@ -22,11 +22,12 @@ const Election = require('./models/election.model');
 const jwt = require('jsonwebtoken');
 var moment = require('moment')
 var nodemailer = require('nodemailer');
+//mongodb://<dbuser>:<dbpassword>@ds131932.mlab.com:31932/
 
-//mongoose.connect('mongodb://nkenna:nkenna007@ds125673.mlab.com:25673/heroku_j02lqbhk');
+//mongoose.connect('mongodb://nkenna:nkenna007@ds125673.mlab.com:25673/02lqbhk');
 
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://heroku_0v20v9h9@ds125673.mlab.com:25673/heroku_j02lqbhk')
+mongoose.connect('mongodb://heroku_0v20v9h9@ds131932.mlab.com:31932/heroku_0v20v9h9')
 .then(() =>  console.log('connection succesful'))
 .catch((err) => console.error(err));
 
