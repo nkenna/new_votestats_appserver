@@ -114,6 +114,14 @@ setInterval(() =>{
 
 }, 60000);
 
+app.get('/', function(req, res){
+   console.log('xxxx')
+  
+  
+      res.json({ data: 'workin' });
+        //return res.status(200).json(data);
+    })
+
 
 
 app.post('/addelection', function(req, res){
