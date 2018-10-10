@@ -228,6 +228,7 @@ app.post('/signin', function(req, res){
  });
 
 app.post('/signup', function(req, res) {
+   console.log(req.body.password);
 
   bcrypt.hash(req.body.password, null, null, function(err, hash){
        if(err) {
